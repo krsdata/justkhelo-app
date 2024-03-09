@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_trades_status"
+    android:layout_width="match_parent"
+    android:layout_height="63dp"
+    android:background="@color/white"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/_2sdp">
+
+    <RelativeLayout
+        android:id="@+id/rel_player_image"
+        android:layout_width="65dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/player_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/player_blue" />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_action_info" />
+
+        <TextView
+            android:id="@+id/team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/_1sdp"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingStart="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_3sdp"
+            android:text="AU-W"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8sdp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_weight="2.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/player_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:maxLines="1"
+            android:padding="@dimen/_2sdp"
+            android:singleLine="true"
+            android:text="Virat Kohli"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/player_selection_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:maxLines="1"
+            android:padding="@dimen/_2sdp"
+            android:singleLine="true"
+            android:text="Selected by 81.96%"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8sdp" />
+
+        <LinearLayout
+            android:id="@+id/linear_announced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/anounced_indicator_circle"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/circle_green" />
+
+            <TextView
+                android:id="@+id/anounced_indicator_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Announced"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_7sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:gravity="center_vertical|end"
+        android:minWidth="55dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/player_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:padding="3dp"
+            android:text="100"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_selection_"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fantasy_points"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:padding="3dp"
+            android:text="19.5"
+            android:textSize="@dimen/_9sdp"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/add_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/ic_do_not_disturb_on_black_24dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</LinearLayout>

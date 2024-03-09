@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "102905839315",
+    "project_id": "justkhelo-eb6ca",
+    "storage_bucket": "justkhelo-eb6ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102905839315:android:a0fce376419a057fae5e26",
+        "android_client_info": {
+          "package_name": "justkhelo.cricks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102905839315-0pons1b36k9in8i7p75952bm2gqmuu5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "justkhelo.cricks",
+            "certificate_hash": "e53af17dc18907ce83beb1e7ae510644008c3891"
+          }
+        },
+        {
+          "client_id": "102905839315-j1n4bd2b8ou38g0uv9l572c9sl9pn932.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "justkhelo.cricks",
+            "certificate_hash": "14fc727e5fc8190dbb1509a08f4d94efb10fc5b7"
+          }
+        },
+        {
+          "client_id": "102905839315-msktmffdvla7r22j0attra2khkvh35u6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5MCSNKhCve8W6b5UotnkMAIu6vWS2flI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102905839315-msktmffdvla7r22j0attra2khkvh35u6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

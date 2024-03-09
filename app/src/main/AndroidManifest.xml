@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="justkhelo.cricks"
+    tools:ignore="LockedOrientationActivity">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".NinjaApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme_app"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning,MissingDefaultResource"
+        tools:replace="android:icon,android:theme">
+        <activity
+            android:name=".ui.login.PhoneNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.PhoneLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:configChanges="uiMode"
+            android:screenOrientation="portrait">
+
+            <!-- Branch URI scheme -->
+            <intent-filter>
+                <data
+                    android:host="open"
+                    android:scheme="justkhelo" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- Branch App Links -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="justkhelo.app.link"
+                    android:scheme="https" />
+            </intent-filter>
+
+            <!-- Branch App Links -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="justkhelo-alternate.app.link"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".ui.login.LoginScreenActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/screen_name_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.RegisterScreenActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/screen_name_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dashboard_theme" />
+        <activity
+            android:name=".ContestActivity"
+            android:label="@string/activity_type_contest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MaintainanceActivity"
+            android:label="@string/activity_type_contest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QuizContestActivity"
+            android:label="@string/activity_type_contest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateTeamActivity"
+            android:label="@string/activity_type_create_team"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TeamPreviewActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NotificationListActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SaveTeamActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectTeamActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyBalanceActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddMoneyActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateApplicationActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Translucent" />
+        <activity
+            android:name=".WebActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LeadersBoardActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MoreContestActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InviteFriendsActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SupportActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FullScreenImageViewActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VerifyDocumentsActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WithdrawAmountsActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DocumentsListActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyTransactionHistoryActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:label="Update Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:label="Change Password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RefferalFriendsListActivity"
+            android:label="Update Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtpVerifyActivity"
+            android:label="Update Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.JoinContestActivity"
+            android:label="Join Contest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OfferActivity"
+            android:label="Latest Offers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContestLeaderBoardActivity"
+            android:label="Contest LeaderBoard"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ViewUserDetailActivity"
+            android:label="User Info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PreviewTeamLeaderActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlayerInfoActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaytmWithdrawActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="fontProviderRequests"
+            android:value="Noto Color Emoji Compat" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="@string/razorpay_key" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="true" /> <!-- Branch init -->
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="key_live_jm3xaNlJA1941rJXbB9schlkFzj7h6zO" /> <!-- Branch testing (TestMode "true" to simulate fresh installs on dev environment) -->
+        <meta-data
+            android:name="io.branch.sdk.TestMode"
+            android:value="false" />
+    </application>
+
+</manifest>

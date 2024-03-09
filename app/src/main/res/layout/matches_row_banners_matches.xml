@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pl.pzienowicz.autoscrollviewpager.AutoScrollViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recycler_banners"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_75sdp"
+    android:layout_marginLeft="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/matches_view_top_margin"
+    android:layout_marginRight="@dimen/_8sdp" />
